@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FirebaseChat</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <button class="btn btn-warning" data-signout>Wyloguj się</button>
+      </nav>
+
+      <ul class="list-group pt-5" id="chat"></ul>
+      <form id="sendMessageForm" class="d-flex" validate>
+        <input
+          type="text"
+          name="content"
+          placeholder="Wpisz swoją wiadomość...."
+          class="form-control"
+          required
+        />
+        <input
+          type="text"
+          name="sentBy"
+          placeholder="Twoje imię"
+          class="form-control"
+          required
+        />
+        <button class="btn btn-primary" type="submit">Wyślij</button>
+      </form>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
